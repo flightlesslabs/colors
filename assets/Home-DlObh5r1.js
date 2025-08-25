@@ -1,13 +1,13 @@
-import{j as s,a as t}from"./blocks-D0Dp0aSX.js";import{useMDXComponents as o}from"./index-Bciyshao.js";import"./preload-helper-D9Z9MdNV.js";import"./iframe-BueRTo8q.js";const i=`{
+import{j as n,a as t}from"./blocks-B32-Cnf6.js";import{useMDXComponents as l}from"./index-0ojb1UYW.js";import"./preload-helper-D9Z9MdNV.js";import"./iframe-CUy-WZ22.js";const i=`{
   "name": "@flightlesslabs/colors",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "copy-css": "cpy src/lib/styles dist/ --flat",
-    "build": "vite build && pnpm copy-css && pnpm run prepack",
+    "build": "vite build && pnpm run prepack",
     "build:test": "vite build && pnpm copy-css",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
-    "prepack": "svelte-kit sync && svelte-package && publint",
+    "prepack": "svelte-kit sync && svelte-package && pnpm copy-css && publint",
     "svelte-check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
@@ -26,13 +26,8 @@ import{j as s,a as t}from"./blocks-D0Dp0aSX.js";import{useMDXComponents as o}fro
     "dist",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*",
-    "src/lib",
-    "!src/lib/**/*.test.*",
-    "!src/lib/**/*.spec.*",
-    "!src/lib/stories/**/*.stories.*",
-    "!src/lib/stories/**/*.mdx",
-    "!src/lib/stories/assets/**/*.png",
-    "!src/lib/stories/assets/**/*.jpg"
+    "src/lib/styles",
+    "!src/lib/stories/"
   ],
   "sideEffects": [
     "**/*.css"
@@ -45,7 +40,7 @@ import{j as s,a as t}from"./blocks-D0Dp0aSX.js";import{useMDXComponents as o}fro
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     },
-    "./styles/global.css": "./dist/styles/global.css"
+    "./global.css": "./dist/global.css"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
@@ -94,20 +89,20 @@ import{j as s,a as t}from"./blocks-D0Dp0aSX.js";import{useMDXComponents as o}fro
     "@vueless/storybook-dark-mode": "^9.0.7"
   }
 }
-`;function l(n){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",...o(),...n.components};return s.jsxs(s.Fragment,{children:[s.jsxs("main",{style:{textAlign:"center"},children:[s.jsx("img",{src:"dodo-circle-6.png",style:{width:200,height:"auto"}}),s.jsx(e.h1,{id:"colors",children:"Colors"}),s.jsxs("h3",{style:{fontWeight:500},children:["v",JSON.parse(i)?.version]}),s.jsx("h3",{style:{fontWeight:400},children:"Colorset for everyone. based on tailwind"}),s.jsxs(e.h3,{id:"github---npm",children:[s.jsx(e.a,{href:"https://github.com/flightlesslabs/colors",rel:"nofollow",children:"Github"})," - ",s.jsx(e.a,{href:"https://www.npmjs.com/package/@flightlesslabs/colors",rel:"nofollow",children:"npm"})]})]}),`
-`,s.jsx("br",{}),`
-`,s.jsx("br",{}),`
-`,s.jsx(e.h2,{id:"install",children:"Install"}),`
-`,s.jsx(e.p,{children:"pnpm"}),`
-`,s.jsx(t,{dark:!0,language:"bash",code:`
+`;function o(s){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",...l(),...s.components};return n.jsxs(n.Fragment,{children:[n.jsxs("main",{style:{textAlign:"center"},children:[n.jsx("img",{src:"dodo-circle-6.png",style:{width:200,height:"auto"}}),n.jsx(e.h1,{id:"colors",children:"Colors"}),n.jsxs("h3",{style:{fontWeight:500},children:["v",JSON.parse(i)?.version]}),n.jsx("h3",{style:{fontWeight:400},children:"Colorset for everyone. based on tailwind"}),n.jsxs(e.h3,{id:"github---npm",children:[n.jsx(e.a,{href:"https://github.com/flightlesslabs/colors",rel:"nofollow",children:"Github"})," - ",n.jsx(e.a,{href:"https://www.npmjs.com/package/@flightlesslabs/colors",rel:"nofollow",children:"npm"})]})]}),`
+`,n.jsx("br",{}),`
+`,n.jsx("br",{}),`
+`,n.jsx(e.h2,{id:"install",children:"Install"}),`
+`,n.jsx(e.p,{children:"pnpm"}),`
+`,n.jsx(t,{dark:!0,language:"bash",code:`
 pnpm add @flightlesslabs/colors
 `}),`
-`,s.jsx(e.p,{children:"npm"}),`
-`,s.jsx(t,{dark:!0,language:"bash",code:`
+`,n.jsx(e.p,{children:"npm"}),`
+`,n.jsx(t,{dark:!0,language:"bash",code:`
 npm i @flightlesslabs/colors
 `}),`
-`,s.jsx(e.h2,{id:"add-css",children:"Add css"}),`
-`,s.jsxs(e.p,{children:["Add global css in your ",s.jsx(e.code,{children:"+layout.svelte"})," file"]}),`
-`,s.jsx(t,{dark:!0,language:"js",code:`
+`,n.jsx(e.h2,{id:"add-css",children:"Add css"}),`
+`,n.jsxs(e.p,{children:["Add global css in your ",n.jsx(e.code,{children:"+layout.svelte"})," file"]}),`
+`,n.jsx(t,{dark:!0,language:"js",code:`
 import '@flightlesslabs/colors/global.css';
-`})]})}function a(n={}){const{wrapper:e}={...o(),...n.components};return e?s.jsx(e,{...n,children:s.jsx(l,{...n})}):l(n)}export{a as default};
+`})]})}function a(s={}){const{wrapper:e}={...l(),...s.components};return e?n.jsx(e,{...s,children:n.jsx(o,{...s})}):o(s)}export{a as default};
