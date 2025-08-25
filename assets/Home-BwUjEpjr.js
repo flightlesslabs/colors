@@ -1,4 +1,4 @@
-import{j as s,a as t}from"./blocks-Bg1oDa6n.js";import{useMDXComponents as l}from"./index-D0ExIJju.js";import"./preload-helper-D9Z9MdNV.js";import"./iframe-KVZVS0Xm.js";const i=`{
+import{j as s,a as t}from"./blocks-D0Dp0aSX.js";import{useMDXComponents as o}from"./index-Bciyshao.js";import"./preload-helper-D9Z9MdNV.js";import"./iframe-BueRTo8q.js";const i=`{
   "name": "@flightlesslabs/colors",
   "version": "0.1.0",
   "scripts": {
@@ -45,7 +45,7 @@ import{j as s,a as t}from"./blocks-Bg1oDa6n.js";import{useMDXComponents as l}fro
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     },
-    "./global.css": "./dist/global.css"
+    "./styles/global.css": "./dist/styles/global.css"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
@@ -94,20 +94,20 @@ import{j as s,a as t}from"./blocks-Bg1oDa6n.js";import{useMDXComponents as l}fro
     "@vueless/storybook-dark-mode": "^9.0.7"
   }
 }
-`;function o(e){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",...l(),...e.components};return s.jsxs(s.Fragment,{children:[s.jsxs("main",{style:{textAlign:"center"},children:[s.jsx("img",{src:"dodo-circle-6.png",style:{width:200,height:"auto"}}),s.jsx(n.h1,{id:"colors",children:"Colors"}),s.jsxs("h3",{style:{fontWeight:500},children:["v",JSON.parse(i)?.version]}),s.jsx("h3",{style:{fontWeight:400},children:"Colorset for everyone. based on tailwind"}),s.jsxs(n.h3,{id:"github---npm",children:[s.jsx(n.a,{href:"https://github.com/flightlesslabs/colors",rel:"nofollow",children:"Github"})," - ",s.jsx(n.a,{href:"https://www.npmjs.com/package/@flightlesslabs/colors",rel:"nofollow",children:"npm"})]})]}),`
+`;function l(n){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",...o(),...n.components};return s.jsxs(s.Fragment,{children:[s.jsxs("main",{style:{textAlign:"center"},children:[s.jsx("img",{src:"dodo-circle-6.png",style:{width:200,height:"auto"}}),s.jsx(e.h1,{id:"colors",children:"Colors"}),s.jsxs("h3",{style:{fontWeight:500},children:["v",JSON.parse(i)?.version]}),s.jsx("h3",{style:{fontWeight:400},children:"Colorset for everyone. based on tailwind"}),s.jsxs(e.h3,{id:"github---npm",children:[s.jsx(e.a,{href:"https://github.com/flightlesslabs/colors",rel:"nofollow",children:"Github"})," - ",s.jsx(e.a,{href:"https://www.npmjs.com/package/@flightlesslabs/colors",rel:"nofollow",children:"npm"})]})]}),`
 `,s.jsx("br",{}),`
 `,s.jsx("br",{}),`
-`,s.jsx(n.h2,{id:"install",children:"Install"}),`
-`,s.jsx(n.p,{children:"pnpm"}),`
+`,s.jsx(e.h2,{id:"install",children:"Install"}),`
+`,s.jsx(e.p,{children:"pnpm"}),`
 `,s.jsx(t,{dark:!0,language:"bash",code:`
 pnpm add @flightlesslabs/colors
 `}),`
-`,s.jsx(n.p,{children:"npm"}),`
+`,s.jsx(e.p,{children:"npm"}),`
 `,s.jsx(t,{dark:!0,language:"bash",code:`
 npm i @flightlesslabs/colors
 `}),`
-`,s.jsx(n.h2,{id:"add-css",children:"Add css"}),`
-`,s.jsxs(n.p,{children:["Add global css in your ",s.jsx(n.code,{children:"+layout.svelte"})," file"]}),`
+`,s.jsx(e.h2,{id:"add-css",children:"Add css"}),`
+`,s.jsxs(e.p,{children:["Add global css in your ",s.jsx(e.code,{children:"+layout.svelte"})," file"]}),`
 `,s.jsx(t,{dark:!0,language:"js",code:`
 import '@flightlesslabs/colors/global.css';
-`})]})}function a(e={}){const{wrapper:n}={...l(),...e.components};return n?s.jsx(n,{...e,children:s.jsx(o,{...e})}):o(e)}export{a as default};
+`})]})}function a(n={}){const{wrapper:e}={...o(),...n.components};return e?s.jsx(e,{...n,children:s.jsx(l,{...n})}):l(n)}export{a as default};
