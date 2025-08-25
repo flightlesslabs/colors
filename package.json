@@ -2,8 +2,9 @@
   "name": "@flightlesslabs/colors",
   "version": "0.0.1",
   "scripts": {
-    "copy-css": "cpy src/lib/styles/global.css dist/styles --parents",
+    "copy-css": "cpy src/lib/styles dist/ --flat",
     "build": "vite build && pnpm copy-css && pnpm run prepack",
+    "build:test": "vite build && pnpm copy-css",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "prepack": "svelte-kit sync && svelte-package && publint",
@@ -44,7 +45,7 @@
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     },
-    "./styles/global.css": "./dist/styles/global.css"
+    "./global.css": "./dist/global.css"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
