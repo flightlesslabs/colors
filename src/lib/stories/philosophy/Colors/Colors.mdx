@@ -1,0 +1,43 @@
+import { Meta, Story, Source } from '@storybook/addon-docs/blocks';
+import * as ColorsStories from './Colors.stories.svelte';
+import * as OpacityStories from './Opacity.stories.svelte';
+
+<Meta of={ColorsStories} />
+
+# Colors
+
+We are using an extensive color pallet identical to [Tailwind Css](https://tailwindcss.com/docs/colors) Colors. The colors are adjusted for dark and light themes.
+
+## Main Colors
+
+<Story of={ColorsStories.Main} />
+
+Greyscale colors
+
+<Story of={ColorsStories.ColorsNeutral} />
+
+Constant Colors
+
+<Story of={ColorsStories.ColorsConstant} />
+
+## Base Color
+
+<Story of={ColorsStories.ColorsBase} />
+
+Greyscale colors
+
+<Story of={ColorsStories.BaseColorsNeutral} />
+
+## Adjusting opacity
+
+Opacity can be adjusted using css `color-mix` function.
+
+<Source
+  dark
+  language="css"
+  code={`
+color-mix(in oklab, var(--dodo-color-primary-800) 10%, transparent)
+`}
+/>
+
+<Story of={OpacityStories.Main} meta={OpacityStories} />

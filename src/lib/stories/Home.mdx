@@ -1,0 +1,53 @@
+import { Source } from '@storybook/addon-docs/blocks';
+import item from '../../../package.json?raw';
+
+<main style={{ textAlign: 'center' }}>
+
+<img src="dodo-circle-6.png" style={{ width: 200, height: 'auto' }} />
+
+# Colors
+
+<h3 style={{ fontWeight: 500 }}>v{JSON.parse(item)?.version}</h3>
+
+<h3 style={{ fontWeight: 400 }}>Colorset for everyone. based on tailwind</h3>
+
+### [Github](https://github.com/flightlesslabs/colors) - [npm](https://www.npmjs.com/package/@flightlesslabs/colors)
+
+</main>
+
+<br />
+<br />
+
+## Install
+
+pnpm
+
+<Source
+  dark
+  language="bash"
+  code={`
+pnpm add @flightlesslabs/colors
+`}
+/>
+
+npm
+
+<Source
+  dark
+  language="bash"
+  code={`
+npm i @flightlesslabs/colors
+`}
+/>
+
+## Add css
+
+Add global css in your `+layout.svelte` file
+
+<Source
+  dark
+  language="js"
+  code={`
+import '@flightlesslabs/colors/styles/global.css';
+`}
+/>

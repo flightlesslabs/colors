@@ -1,0 +1,23 @@
+import { Source } from '@storybook/addon-docs/blocks';
+import darkThemeToggleImage from '$lib/stories/assets/dark-theme-toggle.png';
+
+# Themes
+
+## Dark theme
+
+dark theme can be activated by adding `.dodo-theme--dark` class on the top container.
+
+<Source
+  dark
+  language="html"
+  code={`
+ <body class="dodo-theme--dark">
+ ...
+`}
+/>
+
+## Toggle theme in documentation
+
+Use the moon icon to toogle theme in documentation mode
+
+<img src={darkThemeToggleImage} />
