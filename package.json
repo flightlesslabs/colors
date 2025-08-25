@@ -26,13 +26,8 @@
     "dist",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*",
-    "src/lib",
-    "!src/lib/**/*.test.*",
-    "!src/lib/**/*.spec.*",
-    "!src/lib/stories/**/*.stories.*",
-    "!src/lib/stories/**/*.mdx",
-    "!src/lib/stories/assets/**/*.png",
-    "!src/lib/stories/assets/**/*.jpg"
+    "src/lib/styles",
+    "!src/lib/stories/"
   ],
   "sideEffects": [
     "**/*.css"
