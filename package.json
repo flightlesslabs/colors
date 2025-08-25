@@ -45,7 +45,7 @@
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     },
-    "./global.css": "./dist/global.css"
+    "./styles/global.css": "./dist/styles/global.css"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
