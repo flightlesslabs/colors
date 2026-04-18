@@ -43,6 +43,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      color: var(--dodo-color-neutral-900);
     }
   }
 </style>

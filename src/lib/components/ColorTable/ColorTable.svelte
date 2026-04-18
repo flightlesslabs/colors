@@ -25,6 +25,9 @@
 <style lang="scss">
   .ColorTable {
     overflow-x: auto;
+    padding: 24px;
+    background-color: var(--dodo-color-white);
+    border-radius: 6px;
 
     :global(.Spectrum) {
       margin-bottom: 40px;

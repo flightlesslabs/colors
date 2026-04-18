@@ -28,7 +28,7 @@
   }
 
   main {
-    padding: 16px;
+    padding: 8px;
     margin: 0 auto;
     max-width: 1100px;
   }

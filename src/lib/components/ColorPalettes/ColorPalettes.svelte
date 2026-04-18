@@ -42,6 +42,7 @@
       font-size: 0.9rem;
       text-transform: capitalize;
       margin: 0;
+      color: var(--dodo-color-neutral-900);
     }
 
     section {

@@ -35,13 +35,17 @@ Click to select the css variable name
   <Spectrum colorList={appColorsList} />
 </ColorTable>
 
-<br />
-<br />
 <ColorPalettes title="Greyscale" colorVariations={['--dodo-color-black', '--dodo-color-white']}/>
 <ColorPalettes title="Constant" colorVariations={['--dodo-color-constant-black', '--dodo-color-constant-white']}/>
 
-<br />
-<br />
+### Dark mode
+
+<div class="dodo-theme--dark">
+<ColorTable>
+  <Spectrum colorList={appColorsList} />
+</ColorTable>
+</div>
+
 
 ### Base Colors
 <ColorTable>
