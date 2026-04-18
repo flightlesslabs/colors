@@ -1,0 +1,50 @@
+<script lang="ts">
+	import ColorTable from '$lib/components/ColorTable/ColorTable.svelte';
+	import Spectrum from '$lib/components/Spectrum/Spectrum.svelte';
+	import ColorPalettes from '$lib/components/ColorPalettes/ColorPalettes.svelte';
+	import { baseColorsList, appColorsList } from '$lib/helpers/color-list.js';
+</script>
+
+# Colors
+
+Colorset for everyone.
+
+## 🚀 Installation
+
+```bash
+pnpm add @flightlesslabs/colors
+```
+
+## 🎨 Import Styles
+
+Import global styles in your root component. use the root layout (+layout.svelte) for SvelteKit.
+
+```ts
+import '@flightlesslabs/colors-base.scss';
+import '@flightlesslabs/colors.scss';
+```
+
+<br />
+
+## Color set
+
+Click to select the css variable name
+
+### App Colors
+<ColorTable>
+  <Spectrum colorList={appColorsList} />
+</ColorTable>
+
+<br />
+<br />
+<ColorPalettes title="Greyscale" colorVariations={['--dodo-color-black', '--dodo-color-white']}/>
+<ColorPalettes title="Constant" colorVariations={['--dodo-color-constant-black', '--dodo-color-constant-white']}/>
+
+<br />
+<br />
+
+### Base Colors
+<ColorTable>
+  <Spectrum colorList={baseColorsList} />
+</ColorTable>
+

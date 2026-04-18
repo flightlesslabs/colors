@@ -1,5 +1,4 @@
 import type { Preview } from '@storybook/sveltekit';
-import { themes } from 'storybook/theming';
 import './global.scss';
 
 const preview: Preview = {
@@ -10,21 +9,12 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    darkMode: {
-      // Set the initial theme
-      current: 'light',
-      // Override the default dark theme
-      dark: themes.dark,
-      // Override the default light theme
-      light: themes.light,
-      stylePreview: true,
-      darkClass: ['dodo-theme--dark'],
-      lightClass: ['dodo-theme--light'],
-    },
-    options: {
-      storySort: {
-        order: ['Home'],
-      },
+
+    a11y: {
+      // 'todo' - show a11y violations in the test UI only
+      // 'error' - fail CI on a11y violations
+      // 'off' - skip a11y checks entirely
+      test: 'todo',
     },
   },
 };
