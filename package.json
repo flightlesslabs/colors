@@ -12,8 +12,6 @@
     "docs": "vite build",
     "build": "tsdown && pnpm run scss",
     "preview": "vite preview",
-    "prepare": "svelte-kit sync || echo ''",
-    "prepack": "svelte-kit sync && svelte-package && publint",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
@@ -31,9 +29,7 @@
   ],
   "exports": {
     ".": "./dist/index.mjs",
-    "./package.json": "./package.json",
-    "./colors-base.css": "./dist/colors-base.css",
-    "./colors.css": "./dist/colors.css"
+    "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",
   "type": "module",
